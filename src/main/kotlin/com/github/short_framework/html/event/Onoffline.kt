@@ -1,0 +1,19 @@
+package com.github.short_framework.html.event
+
+import pt.isel.SHORT.client.EventHandler
+import pt.isel.SHORT.html.base.attribute.Attribute
+import pt.isel.SHORT.html.base.attribute.add
+
+/**
+ * Represents the HTML onoffline event.
+ * Description: Script to be run when the browser starts to work offline.
+ * @param value script
+ */
+fun Attribute.Companion.onoffline(value: EventHandler) = add("onoffline", value)
+
+/**
+ * Represents the HTML onoffline event.
+ * Description: Script to be run when the browser starts to work offline.
+ * @param value script
+ */
+fun List<Attribute>.onoffline(value: EventHandler) = add("onoffline", value)

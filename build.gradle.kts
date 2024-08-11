@@ -6,7 +6,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "pt.isel.short"
+group = "com.github.short-framework"
 version = "0.9.0"
 
 repositories {
