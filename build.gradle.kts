@@ -2,6 +2,7 @@ import java.net.URI
 
 plugins {
     kotlin("jvm") version "1.9.20"
+    id("org.jlleitschuh.gradle.ktlint") version "11.3.1"
     id("maven-publish")
 }
 
@@ -35,6 +36,11 @@ publishing {
             }
         }
     }
+}
+
+// Optionally configure plugin
+configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+    debug.set(true)
 }
 
 tasks.test {
