@@ -22,4 +22,3 @@ jobs:
         env:
           GITHUB_ACTOR: ${{ secrets.SHORT_CORE_PACKAGE_DEPLOY_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.SHORT_CORE_PACKAGE_DEPLOY_TOKEN }}
- 

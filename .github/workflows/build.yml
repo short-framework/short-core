@@ -11,6 +11,8 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
           cache: gradle
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       - name: Lint Project
         run: ./gradlew ktlintMainSourceSetFormat ktlintTestSourceSetFormat
       - name: Build Project
