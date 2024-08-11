@@ -1,11 +1,11 @@
 import Pages.page1
 import Pages.page2
+import com.github.shortFramework.Application
+import com.github.shortFramework.PageFactory
+import com.github.shortFramework.aggregatePages
+import com.github.shortFramework.getPages
+import com.github.shortFramework.html.base.element.Tag
 import diff.markTextDiff2
-import pt.isel.SHORT.Application
-import pt.isel.SHORT.PageFactory
-import pt.isel.SHORT.aggregatePages
-import pt.isel.SHORT.getPages
-import pt.isel.SHORT.html.base.element.Tag
 import kotlin.reflect.jvm.javaMethod
 import kotlin.test.Test
 

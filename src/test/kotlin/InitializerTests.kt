@@ -1,5 +1,5 @@
-import pt.isel.SHORT.Application
-import pt.isel.SHORT.runSHORT
+import com.github.shortFramework.Application
+import com.github.shortFramework.runSHORT
 import kotlin.test.Test
 
 class InitializerTests {
