@@ -1,5 +1,8 @@
+import java.net.URI
+
 plugins {
     kotlin("jvm") version "1.9.20"
+    id("maven-publish")
 }
 
 group = "pt.isel.short"
@@ -19,6 +22,19 @@ dependencies {
     implementation( group = "com.google.code.gson", name = "gson", version = "2.10.+")
 
     implementation(group = "io.github.oshai", name = "kotlin-logging-jvm", version = "6.0.+")
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "GithubPackages"
+            url = URI("https://maven.pkg.github.com/short-framework/short-core")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
 
 tasks.test {
